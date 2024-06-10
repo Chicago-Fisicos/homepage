@@ -4,7 +4,8 @@ from PIL import Image
 from io import BytesIO
 import requests
 
-
+# Correr aplicacion en terminal :  python -m streamlit run main.py
+# ---->
 # Links utilizados:
 #                   https://drive.google.com/uc?export=download&id=1RWtqI_ZqExIyvrCIzwQQmMt0qDv67mHY
 
