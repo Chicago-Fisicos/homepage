@@ -1,0 +1,11 @@
+# Run with:
+#   docker compose up
+
+services:
+  fisica-pagina-web:
+    build: .
+    image: fisica-pagina-web
+    container_name: fisica-pagina-web
+    restart: unless-stopped
+    ports:
+      - "8505:8505"
