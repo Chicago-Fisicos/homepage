@@ -11,18 +11,18 @@ import requests
 
 
 st.markdown("<h1 style='text-align: center;'>Chicago Fisicos</h1>", unsafe_allow_html=True)
-chipi_trackeo_original = ("https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/chipi/tablas/trackeo-original.csv")
-chipi_trackeo_nuevo_origen = ("https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/chipi/tablas/trackeo-original-nuevo-origen.csv")
-chipi_curvefit = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/chipi/graficos/curve_fit.png?raw=true'
-chipi_savitzky = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/chipi/graficos/savitzky.png?raw=true'
-chipi_tabla_curvefit= 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/chipi/tablas/trackeo-suavizado-curve-fit-nuevo-origen.csv'
-chipi_tabla_savitzky ='https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/chipi/tablas/trackeo-suavizado-savitzky-nuevo-origen.csv'
+chipi_trackeo_original = ("https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/trackeo-original.csv")
+chipi_trackeo_nuevo_origen = ("https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/trackeo-original-nuevo-origen.csv")
+chipi_curvefit = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/graficos/curve_fit.png?raw=true'
+chipi_savitzky = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/graficos/savitzky.png?raw=true'
+chipi_tabla_curvefit= 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/trackeo-suavizado-curve-fit-nuevo-origen.csv'
+chipi_tabla_savitzky ='https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/trackeo-suavizado-savitzky-nuevo-origen.csv'
 
-rebote_tablero_curvefit = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-rebote-tablero/graficos/curve_fit.png?raw=true'
-rebote_tablero_savitzky ='https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-rebote-tablero/graficos/savitzky.png?raw=true'
-rebote_tabla_nuevo_origen = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-rebote-tablero/tablas/trackeo-original-nuevo-origen.csv'
-rebote_tabla_curvefit = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-rebote-tablero/tablas/trackeo-suavizado-curve-fit-nuevo-origen.csv'
-rebote_tabla_savitzky = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-rebote-tablero/tablas/trackeo-suavizado-savitzky-nuevo-origen.csv'
+rebote_tablero_curvefit = 'https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/descartado/basket-rebote-tablero/graficos/curve_fit.png?raw=true'
+rebote_tablero_savitzky ='https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/descartado/basket-rebote-tablero/graficos/savitzky.png?raw=true'
+rebote_tabla_nuevo_origen = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/descartado/basket-rebote-tablero/tablas/trackeo-original-nuevo-origen.csv'
+rebote_tabla_curvefit = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/descartado/basket-rebote-tablero/tablas/trackeo-suavizado-curve-fit-nuevo-origen.csv'
+rebote_tabla_savitzky = 'https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/descartado/basket-rebote-tablero/tablas/trackeo-suavizado-savitzky-nuevo-origen.csv'
 
 data_chipi = pd.read_csv(chipi_trackeo_original, delimiter=',')
 data_chipi_nuevo_origen = pd.read_csv(chipi_trackeo_nuevo_origen,delimiter =',')
