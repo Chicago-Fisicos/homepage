@@ -12,8 +12,8 @@ import intro,cinematica,dinamica
 with st.sidebar:
     app = option_menu(
         menu_title='Proyecto',
-        options=['Intro', 'Cinematica', 'Dinamica'],
-        icons=['house', 'c-circle-fill', 'graph-up'],
+        options=['Intro', 'Cinematica', 'Dinamica','Energia','Choque'],
+        icons=['house', 'c-circle-fill', 'graph-up','lightning','transparency'],
         menu_icon='filter-square',
         default_index=0,
         styles={
