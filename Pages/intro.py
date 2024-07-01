@@ -5,29 +5,21 @@ import streamlit as st
 #                   https://drive.google.com/uc?export=download&id=1RWtqI_ZqExIyvrCIzwQQmMt0qDv67mHY
 
 def app():
+    st.markdown("<h1 style='text-align: center; color: white;'>CHICAGO FISICOS</h1>", unsafe_allow_html=True)
 
-    # HTML para centrar el título con más estilos
-    html_title = """
-    <div style="text-align: center; font-size: 32px; color: #FBF7FA; font-weight: bold; margin-top: 20px;">
-        CHICAGO FISICOS
-    </div>
+    st.markdown("### **Ayudante: Marcos Meo**")
+
+    texto="""
+        - María Luz Cabral
+        - Nahuel Diaz
+        - Franco Tomás Cippitelli
+        - Francisco Luis Flaibani
+        - Brenda Belen Martinez Ocampo
+        - Yohana Moyano
+        - Matías David Schwerdt
+        - Jeremias Eloy Segurado Negrin
+        - Santiago Vazquez
+        - Diego José Villarroel
     """
+    st.markdown(texto)
 
-    # Renderizar el HTML en Streamlit
-    st.markdown(html_title, unsafe_allow_html=True)
-
-    # Continuar con el resto de tu aplicación
-    st.title("Proyecto de Fisica I")
-
-    st.write("Ayudante: Marcos Meo")
-
-    st.write("María Luz Cabral" )
-    st.write("Nahuel Diaz")
-    st.write("Franco Tomás Cippitelli")
-    st.write("Francisco Luis Flaibani")
-    st.write("Brenda Belen Martinez Ocampo")
-    st.write("Yohana Moyano")
-    st.write("Matías David Schwerdt")
-    st.write("Jeremias Eloy Segurado Negrin")
-    st.write("Santiago Vazquez")
-    st.write("Diego José Villarroel")
