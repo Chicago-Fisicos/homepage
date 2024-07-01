@@ -19,3 +19,14 @@ def app():
 
     # Mostrar el reproductor de audio en Streamlit
     st.audio(url2)
+
+    # Grafico de sonido:
+    # https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/audios/graficos/grafico_picos.png
+
+    graf_audio=' https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/audios/graficos/grafico_picos.png?raw=true'
+    # Solicitar la imagen desde la URL
+    response = requests.get(graf_audio)
+    img = Image.open(BytesIO(response.content))
+
+    # Mostrar la imagen en Streamlit
+    st.image(img, caption='Picos sonido', use_column_width=True)
