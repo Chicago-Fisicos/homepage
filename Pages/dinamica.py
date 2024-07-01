@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 import requests
 def app():
-    st.markdown("### DINAMICA")
+    st.markdown("# DINAMICA")
 
     st.write("\n\n")
 

@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 import requests
 from streamlit_option_menu import option_menu
-import intro,cinematica,dinamica
+import intro,cinematica,dinamica,energia,choque
 
 # Correr aplicacion en terminal: python -m streamlit run ..../home.py
 
@@ -30,4 +30,8 @@ elif app == "Cinematica":
     cinematica.app()
 elif app == "Dinamica":
     dinamica.app()
+elif app == "Energia":
+    energia.app()
+elif app == "Choque":
+    choque.app()
 

@@ -30,7 +30,7 @@ fran_tenis_tiro = "https://drive.google.com/file/d/1BK67GKfpYiiNmUO30OHVlHCapsXd
 fran_tenis_id='1BK67GKfpYiiNmUO30OHVlHCapsXdA1PG'
 fran_tenis_url='https://drive.google.com/file/d/1BK67GKfpYiiNmUO30OHVlHCapsXdA1PG/preview'
 def app():
-    st.markdown("### **CINEMATICA**")
+    st.markdown("# **CINEMATICA**")
 
     # Crear dos columnas
     col1, col2 = st.columns(2)
