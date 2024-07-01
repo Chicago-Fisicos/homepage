@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 import requests
 from streamlit_option_menu import option_menu
-import intro,cinematica,dinamica,energia,choque
+import intro,cinematica,dinamica,energia,choque,sonido
 
 # Correr aplicacion en terminal: python -m streamlit run ..../home.py
 
@@ -12,8 +12,8 @@ import intro,cinematica,dinamica,energia,choque
 with st.sidebar:
     app = option_menu(
         menu_title='Proyecto',
-        options=['Intro', 'Cinematica', 'Dinamica','Energia','Choque'],
-        icons=['house', 'c-circle-fill', 'graph-up','lightning','transparency'],
+        options=['Intro', 'Cinematica', 'Dinamica','Energia','Choque','Audio'],
+        icons=['house', 'c-circle-fill', 'graph-up','lightning','transparency','volume-up-fill'],
         menu_icon='filter-square',
         default_index=0,
         styles={
@@ -34,4 +34,6 @@ elif app == "Energia":
     energia.app()
 elif app == "Choque":
     choque.app()
+elif app == "Audio":
+    sonido.app()
 
