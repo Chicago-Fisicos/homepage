@@ -14,7 +14,7 @@ def app():
             así como sus velocidades iniciales y finales. 
             Estos datos nos permitieron calcular la cantidad de movimiento (momentum) 
             antes y después del choque, y determinar si hubo pérdida de energía, calculando 
-            la energía cinética antes y después del impacto.
+            la energía cinética antes y después del impacto.\n
            Los resultados obtenidos confirmaron que, por un lado, la cantidad de movimiento
            se conserva antes y después del choque, cumpliendo con el principio de conservación del momento lineal. 
            Por otro lado, el choque resultó ser inelástico, ya que se observó

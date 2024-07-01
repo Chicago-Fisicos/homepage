@@ -10,8 +10,12 @@ def app():
     st.write("\n\n")
 
     texto = """
-        Para el estudio de la energía, realizamos un experimento en el cual grabamos un  video donde se lanza una pelota de básquet al aro. Sabemos que la energía mecánica de un sistema en un momento determinado es la suma de la energía cinética, la energía potencial y la energía elástica (que en este caso es cero).
-    A través del análisis de la energía, sabemos que cuando un objeto experimenta un cambio en su velocidad, su energía cinética cambia. Al analizar el movimiento de la pelota de básquet, pudimos determinar su velocidad final al conocer su energía cinética.
+        Para el estudio de la energía, realizamos un experimento en el cual grabamos un  video donde se lanza una pelota de básquet al aro. 
+        Sabemos que la energía mecánica de un sistema en un momento determinado es la suma de la energía cinética,
+         la energía potencial y la energía elástica (que en este caso es cero).\n
+    A través del análisis de la energía, sabemos que cuando un objeto experimenta 
+    un cambio en su velocidad, su energía cinética cambia. Al analizar el movimiento 
+    de la pelota de básquet, pudimos determinar su velocidad final al conocer su energía cinética.\n
     Los resultados obtenidos confirman que la relación teórica entre la energía mecánica y la velocidad final se mantiene consistente con las leyes de la física, específicamente con los principios de conservación de la energía.
     """
     st.markdown(texto)
