@@ -1,5 +1,5 @@
 pandas==2.1.4
-Pillow==9.0.1
+Pillow==10.0.1
 requests==2.31.0
 streamlit==1.30.0
 streamlit-option-menu==0.3.13
