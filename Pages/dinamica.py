@@ -43,16 +43,14 @@ def app():
 
     Las dos primeras leyes de Newton son válidas para mediciones efectuadas en un sistema de referencia absoluto, pero deben corregirse levemente cuando se realizan respecto a un sistema de referencia acelerado, como la superficie terrestre. La segunda ley de Newton constituye la base de la mayoría de los análisis en mecánica. Aplicada a un punto material de masa \\(m\\), sometido a una fuerza resultante \\(F\\), puede enunciarse en la forma:
 
-    \\[
-    F = ma
-    \\]
-
-    Donde \\(a\\) es la aceleración medida en un sistema de referencia no acelerado. La primera ley de Newton es consecuencia de la segunda, ya que no habrá aceleración si la fuerza es nula, y en tal caso la partícula debe estar en reposo o moviéndose a velocidad constante. La tercera ley constituye el principio de acción y reacción.
+    """
+    texto_lawx2= """Donde \\(a\\) es la aceleración medida en un sistema de referencia no acelerado. La primera ley de Newton es consecuencia de la segunda, ya que no habrá aceleración si la fuerza es nula, y en tal caso la partícula debe estar en reposo o moviéndose a velocidad constante. La tercera ley constituye el principio de acción y reacción.
     """
 
     # Mostrar el texto en Streamlit con Markdown
     st.markdown(texto_laws, unsafe_allow_html=True)
-
+    st.latex(r""" F = ma  """)
+    st.markdown(texto_lawx2)
     st.markdown("## Video analizado")
 
     # Enlace embebido de Google Drive tiro del chipi
