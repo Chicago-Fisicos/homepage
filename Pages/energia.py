@@ -49,6 +49,36 @@ def app():
     # Mostrar la explicación de los términos en Streamlit
     st.markdown(texto_explicacion)
 
+    texto2="""
+    Cualquier cosa que esté en movimiento posee energía cinética.\n
+    En el **Sistema Internacional (SI)**, la unidad de energía cinética es el **Joule (J)**, la misma que la del trabajo. 
+    Un **Joule** corresponde a:
+    """
+    st.markdown(texto2)
+
+    # Ecuación en LaTeX
+    latex_ec = r"""
+    1 \, \text{kg} \cdot \text{m}^2 / \text{s}^2
+    """
+
+    # Mostrar la ecuación en Streamlit
+    st.latex(latex_ec)
+
+    st.markdown("La fórmula para calcular la energía cinética es:\n")
+
+    latex_ec2=r"""
+        \mathbf{E_c}\ = \frac{1}{2} \cdot m \cdot V^2
+    """
+    st.latex(latex_ec2)
+
+    st.markdown("La energía potencial es el tipo de energía asociada a la posición relativa dentro de un sistema, "
+                "es decir, la posición de un objeto con respecto a otro.\n"
+                "La energía potencial elástica es la energía almacenada que resulta de aplicar una fuerza "
+                "para deformar un objeto elástico."
+                "Esta energía queda almacenada hasta que se elimina la fuerza y"
+                " el objeto elástico regresa a su forma original, realizando trabajo en el proceso.")
+
+    st.write("\n\n")
     # Link :
     # https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/graficos/energia_mecanica.png?raw=true
 
@@ -60,3 +90,43 @@ def app():
 
     # Mostrar la imagen en Streamlit
     st.image(img, caption='Energia', use_column_width=True)
+
+    st.markdown("## Materiales y métodos")
+
+    texto3="""
+        Para este experimento, grabamos un video en una cancha de básquet.\n
+        Requerimos un trípode, un celular, una cinta métrica, una pelota de básquet y una persona.
+        Realizamos tiros al aro, tomando las medidas correspondientes en el Sistema Internacional (SI) o MKS:\n
+        **metro (m)**, **kilogramo (kg)** y **segundo (s)**.
+        Utilizamos una balanza para pesar la pelota de básquet, obteniendo una masa de **0.62 kg**. \n
+        Con la cinta métrica, medimos la altura del aro, obteniendo un resultado de **3.05 m.**
+    """
+    st.markdown(texto3)
+
+    st.markdown("# INGRESAR TABLA ")
+
+    st.markdown("## Calculos y resultados")
+
+    texto_calculo="""
+        Para calcular la energía mecánica utilizaremos las siguientes fórmulas:
+    """
+    st.markdown(texto_calculo)
+
+    latex_ec3=r"""
+        \mathbf{E_{MC}} \ = \mathbf{E_C} + \mathbf{E_P}
+    """
+    st.latex(latex_ec3)
+    st.latex(latex_ec2)
+
+    latex_ec4=r"""
+        \mathbf{E_{P}} \ = \text{m} \cdot \text{g} \cdot \text{h}
+    """
+    st.latex(latex_ec4)
+
+    texto4="""
+        **Datos:**\n
+        - Altura del aro: 3.05m
+        - Masa de la pelota: 0.62kg
+        - Altura de la pelota (desde donde arranca el trackeo): 2.50m
+    """
+    st.markdown(texto4)
