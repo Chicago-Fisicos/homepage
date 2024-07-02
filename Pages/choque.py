@@ -89,3 +89,26 @@ def app():
     Para obtener las velocidades iniciales y finales de ambas pelotas en ambos ejes, nos basamos en las siguientes tablas:\n
     """
     st.markdown(texto3)
+
+    #LINK IMAGEN
+    #https://drive.google.com/file/d/1NNb_r7RRBTmM03E33TQR-mp8uAGIaz1Y/view?usp=drive_link
+    #https://drive.google.com/file/d/1tD4ouCGRkGXl0OtOQ_XJcGbUrihmE_mP/view?usp=drive_link
+    grafico='1NNb_r7RRBTmM03E33TQR-mp8uAGIaz1Y'
+    grafico_2='1tD4ouCGRkGXl0OtOQ_XJcGbUrihmE_mP'
+    def get_image_from_drive(file_id):
+        url = f"https://drive.google.com/uc?export=download&id={file_id}"
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        return img
+    # Obtener y mostrar la imagen en Streamlit
+    imagen_1 = get_image_from_drive(grafico)
+    st.image(imagen_1, caption="Grafico 1")
+
+    texto4="""
+    A partir del video y del trackeo en Python, obtuvimos la posición en X e Y en píxeles, así como el tiempo. 
+    Las últimas dos columnas corresponden a la conversión de píxeles a metros, considerando que un píxel equivale a 0.00491 m.\n
+    """
+    st.write(texto4)
+    st.write("\n")
+    image_2=get_image_from_drive(grafico_2)
+    st.image(image_2,caption="Grafico 2")

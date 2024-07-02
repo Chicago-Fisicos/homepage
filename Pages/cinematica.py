@@ -50,6 +50,14 @@ def app():
         las predicciones teóricas, sino que también validan la utilidad de la
         cinemática para describir y predecir el comportamiento de objetos en
         movimiento en situaciones reales.\n
+        
+        La cinemática desarrolla el formalismo necesario para describir el movimiento de
+        un cuerpo en relación con otro elegido como referencia.\n
+        El "observador" (usted) debe definir un sistema de referencia desde el cual
+        analizará el movimiento.
+        Aplicaremos la cinemática para analizar tres tiros de básquet al aro,
+        descomponiendo el movimiento en diferentes etapas y utilizando ecuaciones cinemáticas
+        para describir la trayectoria de la pelota y predecir su comportamiento.\n
     """
     st.markdown(texto_intro)
     st.write("\n")

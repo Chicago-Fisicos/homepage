@@ -103,8 +103,6 @@ def app():
     """
     st.markdown(texto3)
 
-    st.markdown("# INGRESAR TABLA ")
-
     st.markdown("## Calculos y resultados")
 
     texto_calculo="""
@@ -130,3 +128,11 @@ def app():
         - Altura de la pelota (desde donde arranca el trackeo): 2.50m
     """
     st.markdown(texto4)
+
+    # Link tablas: 1- original 2-raw
+    # https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/tablas/tabla-moviento-metros-practico.csv
+    # https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/tabla-moviento-metros-practico.csv
+
+    tabla_datos=("https://raw.githubusercontent.com/Chicago-Fisicos/proyecto-fisica/main/src/basket-doble/tablas/tabla-moviento-metros-practico.csv")
+    db= pd.read_csv(tabla_datos, delimiter=',')
+    st.dataframe(db)
