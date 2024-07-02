@@ -32,19 +32,37 @@ fran_tenis_url='https://drive.google.com/file/d/1BK67GKfpYiiNmUO30OHVlHCapsXdA1P
 def app():
     st.markdown("# **CINEMATICA**")
 
-    # Crear dos columnas
-    col1, col2 = st.columns(2)
-
-    # Mostrar la primera tabla en la primera columna
-    with col1:
-        st.write("Tabla de datos del trackeo original de la pelota coordenadas fuera de eje")
-        st.dataframe(data_chipi)
-
-    # Mostrar la segunda tabla en la segunda columna
-    with col2:
-        st.write("Tabla de datos del trackeo con nuevo origen de coordenadas")
-        st.dataframe(data_chipi_nuevo_origen)
-
+    texto_intro="""
+        Para el estudio de la cinemática, realizamos un experimento en el 
+        cual grabamos tres videos en los que se lanza una pelota de básquet al aro.\n
+        En este experimento, medimos la altura del aro, la altura de la pelota en el 
+        instante inicial y la distancia del aro a la pelota.
+        Estos datos nos permitieron calcular la velocidad en el eje X, la velocidad 
+        en el eje Y, la altura máxima de la pelota y el tiempo correspondiente a esa altura.\n
+        Los resultados obtenidos confirman la precisión y la aplicabilidad de las ecuaciones
+        de cinemática en el análisis del movimiento de una pelota de
+        básquet lanzada hacia el aro.\n
+        A través de la medición de las distancias y los tiempos, y utilizando las
+        ecuaciones cinemáticas, pudimos calcular las velocidades de la pelota en 
+        diferentes puntos de su trayectoria.\n
+        Además, determinamos la altura máxima alcanzada por la pelota y
+        el tiempo en el que se alcanza esta altura. Estos cálculos no solo corroboran
+        las predicciones teóricas, sino que también validan la utilidad de la
+        cinemática para describir y predecir el comportamiento de objetos en
+        movimiento en situaciones reales.\n
+    """
+    st.markdown(texto_intro)
+    st.write("\n")
+    st.write("Formulas utilizadas: \n")
+    formulas=r"""
+        \begin{align}
+        v_x(t) &= v_{0x} \\
+        x(t) &= v_{0x}t \\
+        v_y(t) &= v_{0y} - gt \\
+        y(t) &= y_{0} +  v_{0y}t - \frac{1}{2}gt^2 \\
+        \end{align}
+    """
+    st.latex(formulas)
     # ID del video en Google Drive
     video_id = '1yRrGMfC26jI2qizgLljeAp7saDFM4Atu'
 
@@ -145,6 +163,18 @@ def app():
     # Mostrar la imagen en Streamlit
     st.image(img, caption='Curve Fit', use_column_width=True)
 
+    # Crear dos columnas
+    col1, col2 = st.columns(2)
+
+    # Mostrar la primera tabla en la primera columna
+    with col1:
+        st.write("Tabla de datos del trackeo original de la pelota coordenadas fuera de eje")
+        st.dataframe(data_chipi)
+
+    # Mostrar la segunda tabla en la segunda columna
+    with col2:
+        st.write("Tabla de datos del trackeo con nuevo origen de coordenadas")
+        st.dataframe(data_chipi_nuevo_origen)
 
     col3, col4 = st.columns(2)
     # Mostrar la primera tabla en la primera columna
