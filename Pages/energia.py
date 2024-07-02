@@ -12,7 +12,7 @@ def app():
     texto = """
         Para el estudio de la energía, realizamos un experimento en el cual grabamos un  video donde se lanza una pelota de básquet al aro. 
         Sabemos que la energía mecánica de un sistema en un momento determinado es la suma de la energía cinética,
-         la energía potencial y la energía elástica (que en este caso es cero).\n
+         la energía potencial gravitatoria y la energía potencial elástica que el sistema tiene en ese momento.\n
     A través del análisis de la energía, sabemos que cuando un objeto experimenta 
     un cambio en su velocidad, su energía cinética cambia. Al analizar el movimiento 
     de la pelota de básquet, pudimos determinar su velocidad final al conocer su energía cinética.\n
@@ -35,7 +35,7 @@ def app():
     - \\( E_p \\) es la energía potencial,
     - \\( E_e \\) es la energía elástica.
     
-    La diferencia entre energía cinética y energía potencial es que la primera se corresponde con los objetos en movimiento, mientras que la segunda es igual al trabajo que la fuerza peso puede realizar si se deja caer el cuerpo desde una determinada altura.
+    La diferencia entre energía cinética y energía potencial gravitatoria es que la primera se corresponde con los objetos en movimiento, mientras que la segunda es igual al trabajo que la fuerza peso puede realizar si se deja caer el cuerpo desde una determinada altura.
 
     """
     # Mostrar el texto y la ecuación en Streamlit
