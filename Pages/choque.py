@@ -4,6 +4,7 @@ from PIL import Image
 from io import BytesIO
 import requests
 
+# Link golf : https://drive.google.com/file/d/1HGXU91fEMXKLz2u2nuIkRMgstaB32laE/view?usp=drive_link
 def app():
     st.markdown("# **CHOQUE**")
 
