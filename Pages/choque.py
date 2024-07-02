@@ -76,3 +76,16 @@ def app():
     """
     st.markdown("- Conservacion de la energia cinética: ")
     st.latex(latex_ec4)
+
+    st.markdown("## Materiales y métodos")
+
+    texto3="""
+    Para este experimento, grabamos un video en una cancha de básquet. \n
+    Utilizamos un trípode, un celular, una pelota de tenis, una pelota de básquet y dos personas.\n
+    Tomamos las medidas correspondientes en el **Sistema Internacional (SI)** o **MKS:** **metro (m)**, **kilogramo (kg)** y **segundo (s)**. \n
+    Usamos una balanza para pesar ambas pelotas antes de grabar el experimento, obteniendo los siguientes datos:
+    -   Masa de la pelota de tenis: 0.06kg
+    -   Masa de la pelota de basquet: 0.62kg\n
+    Para obtener las velocidades iniciales y finales de ambas pelotas en ambos ejes, nos basamos en las siguientes tablas:\n
+    """
+    st.markdown(texto3)
