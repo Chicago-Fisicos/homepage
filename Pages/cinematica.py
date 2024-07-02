@@ -100,12 +100,43 @@ def app():
     - **Altura del aro:** 3,05 m.
     - **Distancia desde el punto (0,0) al final del tiro:** 0,55 m.
     - **Distancia(0,0) Final Tiro = AlturaAro - DistanciaEjeY**.
+    \n
+    Ahora bien, para calcular la posición vertical y así encontrar 
+    la velocidad inicial del tiro vertical, tenemos la siguiente ecuación:
     """
     # Mostrar el texto en Streamlit con Markdown
     st.markdown(texto_tiro_doble)
+    # Ecuación en LaTeX
+    latex_ec1 = r"""
+    Y(t) = -\frac{1}{2} g t^2 + V_{0y} t + Y_0
+    """
+    st.latex(latex_ec1)
     st.write("\n\n")
-    st.write("Grafico usando curvefit \n")
+    texto_sig="""
+    Ahora bien, para calcular la altura máxima que alcanza el tiro, 
+    debemos saber que esta se obtiene cuando la velocidad vertical es cero.
+    Por lo tanto, utilizaremos la siguiente ecuación para calcular 
+    el tiempo que tarda la pelota en alcanzar la altura máxima:
+    """
+    st.markdown(texto_sig)
+    latex_ec2=r"""
+    V_{y}=V_{0y}-gt
+    """
+    st.latex(latex_ec2)
+
     st.write("\n\n")
+    texto_graf="""
+        Observamos que los tres tiros corresponden al mismo experimento, con variaciones lógicas en sus resultados.
+        Por lo tanto, ilustraremos los gráficos correspondientes al primer video.\n
+        Establecimos que el origen del sistema de ejes cartesianos se ubicará en el primer frame 
+        en el que se trackea la pelota. \n
+        Luego, utilizamos el programa Curve Fit para ajustar los datos trackeados a un polinomio de segundo grado, 
+        mejorando así la precisión de los datos.
+        Recordemos que con Python trackeamos las coordenadas X y Y en píxeles en cada frame del video.
+        En el siguiente gráfico se puede apreciar la diferencia entre los datos originales y
+        los datos generados con el programa Curve Fit.
+    """
+    st.markdown(texto_graf)
 
     # Solicitar la imagen desde la URL
     response = requests.get(chipi_curvefit)
@@ -191,7 +222,7 @@ def app():
     #    st.dataframe(data_rebote_tablero_curvefit)
 
 
-    st.title("Tiro doble de Fran")
+    st.title("Tiro tenis de Fran")
 
     # Insertar el video usando HTML
     st.markdown(f"""
@@ -206,7 +237,16 @@ def app():
 
     st.title("Calculos y resultados")
 
-    st.write("")
+    texto_triple="""
+        En nuestro sistema de referencia, el punto (0,0) se encuentra en el inicio de la trayectoria del seguimiento.
+        Nuestros datos son los siguientes:
+        - **Tiempo de vuelo:** 1,266  segundos.
+        - **Distancia en el eje X:** 6,19 m.
+        - **Distancia en el eje Y:** 2,23 m.
+        - **Altura del aro:** 3,05 m.
+        - **Distancia desde el punto (0,0) al final del tiro:** 0,82  m.
+    """
+    st.markdown(texto_triple)
 
     imagen_tiro_triple=get_image_from_drive(grafico_tiro_triple)
     st.image(imagen_tiro_triple, caption="Tiro triple Triple")

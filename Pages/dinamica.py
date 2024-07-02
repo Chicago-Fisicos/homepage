@@ -63,9 +63,51 @@ def app():
              </div>
             """, unsafe_allow_html=True)
 
-    st.markdown("Los calculos realizados pueden verse en el **informe** detalladamente")
+    st.markdown("## Materiales y Métodos")
+    texto_material="""
+        Tomando las medidas correspondientes en el **Sistema Internacional (SI)** o **MKS**: \n
+        - **metro (m)**
+        - **kilogramo (kg)** 
+        - **segundo (s)** \n
+        Utilizamos una balanza para obtener la masa de la pelota de básquet, que resultó ser **0.62kg.**
+        Obtuvimos la aceleración en el eje X  mediante cálculos en Python, y con esta información podemos calcular 
+        la fuerza resultante en el eje x.\n
+        Teniendo en cuenta 
+
+    """
+    st.markdown(texto_material)
+
+    delta_eq = r"""
+    \Delta \mathbf{X} \; \Delta \mathbf{Y} \; \mathbf{F_x}
+    """
+    st.latex(delta_eq)
+    st.write("\n")
+    texto_sig="""
+        Podemos calcular mediante:
+    """
+
+    delta_emec=r"""
+        \Delta E_{\text{MEC}}
+    """
+    st.latex(delta_emec)
+
+    texto_sig2="""
+        Y poder obtener:
+    """
+    texto_fy=r"""
+        \mathbf{F_y}
+    """
+    st.write(texto_sig2)
+
+    st.latex(texto_fy)
+
+    fuerzas_eq = r"""
+    \|\mathbf{F}\| = \sqrt{F_x^2 + F_y^2}
+    """
+    st.latex(fuerzas_eq)
 
     st.markdown("### Resultados obtenidos:")
+    st.markdown("Para mayor detalle de los resultados ir al **Anexo**")
 
     #LINK IMAGEN
     #
