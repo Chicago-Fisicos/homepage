@@ -37,4 +37,42 @@ def app():
              </div>
             """, unsafe_allow_html=True)
 
+    st.write("\n\n")
 
+    texto2="""
+        Para el análisis, se elige un sistema de referencia positivo hacia la derecha 
+        y se aplica el principio de conservación de la cantidad de movimiento.\n
+        Esto significa que la cantidad de movimiento total de los dos cuerpos 
+        (en nuestro caso, la pelota de tenis y la pelota de básquet) antes del
+        choque debe ser igual a la cantidad de movimiento total después del choque.\n
+        Matemáticamente, esto se expresa como:
+        
+    """
+    st.markdown(texto2)
+    latex_ec=r"""
+        \mathbf{P_{f}} \ = \mathbf{P_{0}}
+    """
+    st.latex(latex_ec)
+
+    texto3="""
+    También se plantea la conservación de la energía cinética.\n
+    La energía cinética total que tienen los dos cuerpos antes del
+    choque debe ser igual a la energía cinética total que tienen
+    los dos cuerpos después del choque. Esto se expresa mediante la siguiente ecuación:\n
+    """
+    st.markdown(texto3)
+    latex_ec2=r"""
+        \mathbf{E_{f}} = \mathbf{E_{0}}
+    """
+    st.latex(latex_ec2)
+    st.write("\n \n Ecuaciones a utilizar: \n")
+    st.markdown("- Conservacion de cantidad de movimiento: ")
+    latex_ec3=r"""
+        \mathbf{P_{0}} \ = \mathbf{P_{f}} \Rightarrow \mathbf{m_{a}} \ast \mathbf{V_{A0}} + \mathbf{m_{b}} \ast \mathbf{V_{B0}} = \mathbf{m_{a}} \ast \mathbf{V_{Af}} + \mathbf{m_{b}} \ast \mathbf{V_{Bf}}
+    """
+    st.latex(latex_ec3)
+    latex_ec4=r"""
+        \mathbf{E_{f}} =  \mathbf{E_{0}} \Rightarrow \frac{1}{2} \mathbf{m_{1}} \ast \mathbf{V^2_{0}} + \frac{1}{2} \mathbf{m_{2}} \ast \mathbf{V^2_{0}}   = \mathbf{E_{0}} \Rightarrow \frac{1}{2} \mathbf{m_{1}} \ast \mathbf{V^2_{f}} + \frac{1}{2} \mathbf{m_{2}} \ast \mathbf{V^2_{f}} 
+    """
+    st.markdown("- Conservacion de la energia cinética: ")
+    st.latex(latex_ec4)
