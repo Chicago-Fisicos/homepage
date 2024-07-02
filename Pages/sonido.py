@@ -9,6 +9,18 @@ def app():
 
     #LINK AUDIO:
     #   https://drive.google.com/file/d/1CczDtTo53xOFARmVvCf5P49mQDQipNFF/view?usp=drive_link
+    #LINK VIDEO:
+    #   https://drive.google.com/file/d/1HGXU91fEMXKLz2u2nuIkRMgstaB32laE/view?usp=drive_link
+
+    video_url='https://drive.google.com/file/d/1HGXU91fEMXKLz2u2nuIkRMgstaB32laE/preview'
+
+    # Insertar el video usando HTML
+    st.markdown(f"""
+             <div style="text-align: center;">
+                  <iframe src="{video_url}" width="640" height="480" allow="autoplay"></iframe>
+              </div>
+             """, unsafe_allow_html=True)
+
 
     audio_file = '1CczDtTo53xOFARmVvCf5P49mQDQipNFF'
 
