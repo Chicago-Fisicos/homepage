@@ -3,8 +3,8 @@ import streamlit as st
 def app():
     st.markdown("# **ANEXO**")
 
-    # Enlace embebido del documento de Google Docs
-    doc_url = "https://docs.google.com/document/d/e/2PACX-1vQoa5ydrBaC1pbo_RJ8cRkg0fy9j7LmTTw0JwG_wvDQFZXClui8aE7W0SUixhkGzeUaqxM6pC2D7bDc/pub"
+    # Enlace del PDF en Google Drive
+    pdf_url = "https://drive.google.com/file/d/1Lk_OBzktsQlqfI8Cjd8zH4MgffPiLC9E/preview"
 
     # Ajustar el tamaño del iframe y agregar estilo CSS para mejor visualización
     st.markdown(
@@ -26,8 +26,10 @@ def app():
         }}
         </style>
         <div class="iframe-container">
-            <iframe src="{doc_url}" allowfullscreen></iframe>
+            <iframe src="{pdf_url}" allowfullscreen></iframe>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+app()
