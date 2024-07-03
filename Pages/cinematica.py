@@ -75,7 +75,7 @@ def app():
     video_id = '1yRrGMfC26jI2qizgLljeAp7saDFM4Atu'
 
     # Enlace embebido de Google Drive tiro del chipi
-    video_url = 'https://drive.google.com/file/d/1yRrGMfC26jI2qizgLljeAp7saDFM4Atu/preview'
+    video_url = 'https://drive.google.com/file/d/1hTnpxDve7oa7q2YXrx143-beURJl0u_Z/preview'
 
     # Enlace embebido del rebote contra el tablero
     video_rebote = 'https://drive.google.com/file/d/1QfBcWnunSSEiqFLoJtV2ViZKseZkzkwv/preview'
@@ -289,5 +289,64 @@ def app():
     imagen_tiro_triple=get_image_from_drive(grafico_tiro_triple)
     st.image(imagen_tiro_triple, caption="Tiro triple Triple")
 
+    st.markdown("\n Los calculos finales realizados para los experimentos pueden comprobarse en el informe final. ")
 
+    st.markdown("## **Predicción del Tiro**")
+
+    texto_pred="""
+        En esta sección vamos a hacer una predicción del tiro doble. 
+        Para ello vamos a poner a continuación los datos a utilizar:
+        - **Altura aro: 3.05m**
+        - **Altura pelota: 2.81m**
+        - **Diámetro de la pelota: 0.24m**
+        - **Diámetro de la canasta: 0.5m**
+        - **Distancia al aro: 3.722m** (longitud medida desde la persona hasta el centro de la canasta)
+        
+        Y utilizamos esta tabla de valores generada por Curve Fit que se ve más adelante en esta sección de cinemática para el tiro doble.
+        Ilustramos un poco con el siguiente diagrama donde se tomaron las medidas mensionadas:
+    """
+    st.markdown(texto_pred)
+
+    #LINK IMAGEN
+    #https://drive.google.com/file/d/1pcdTad2edt-A7fbfqW5oNNp71gb3o4P2/view?usp=drive_link
+    #https://drive.google.com/file/d/1oIcjwPEnwdymW9DxkGX1MxHQFAx1s1K0/view?usp=drive_link
+    #https://drive.google.com/file/d/18DVuYmSOY4Q9-MaOjzA4BH2Mmj84aPew/view?usp=drive_link
+    #https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/graficos/prediccion-vs-trackeado.png?raw=true
+
+    grafico_pred='1pcdTad2edt-A7fbfqW5oNNp71gb3o4P2'
+    grafico_pred2='1oIcjwPEnwdymW9DxkGX1MxHQFAx1s1K0'
+    grafico_pred3='18DVuYmSOY4Q9-MaOjzA4BH2Mmj84aPew'
+    grafico_pred4='https://github.com/Chicago-Fisicos/proyecto-fisica/blob/main/src/basket-doble/graficos/prediccion-vs-trackeado.png?raw=true'
+ # Obtener y mostrar la imagen en Streamlit
+    imagen_pred = get_image_from_drive(grafico_pred)
+    st.image(imagen_pred, caption="Prediccion del tiro")
+
+    st.markdown("\n Utilizando las siguientes formulas: \n")
+    latex_ec3=r"""
+         x(t) = x_0 + v_{0x} \, t
+    """
+    latex_ec1 = r"""
+        y(t) = -\frac{1}{2} g t^2 + v_{0y} t + y_0
+        """
+    st.latex(latex_ec3)
+    st.latex(latex_ec1)
+    st.write("\n")
+    imagen_pred2=get_image_from_drive(grafico_pred2)
+    st.image(imagen_pred2,caption="Datos obtenidos")
+
+    texto_pred2="""
+        Sabiendo que la distancia al aro es desde la persona hasta el centro
+        de la canasta, ahora calcularemos cuales son las distancias hasta el
+        inicio de la canasta (E1) y hasta el final de la canasta (E2).
+        Se puede ilustrar con el siguiente gráfico:\n
+    """
+    st.markdown(texto_pred2)
+
+    imagen_pred3=get_image_from_drive(grafico_pred3)
+    st.image(imagen_pred3,caption="Prediccion")
+
+    st.write("\n")
+    imagen_pred4=requests.get(grafico_pred4)
+    imagen_pred4_x=  Image.open(BytesIO(imagen_pred4.content))
+    st.image(imagen_pred4_x,caption="Grafico prediccion")
 

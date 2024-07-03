@@ -9,7 +9,6 @@ import intro,cinematica,dinamica,energia,choque,sonido,anexo
 # Correr aplicacion en terminal: python -m streamlit run ..../home.py
 
 
-
 with st.sidebar:
     app = option_menu(
         menu_title='Proyecto',
