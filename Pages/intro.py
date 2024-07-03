@@ -40,3 +40,34 @@ def app():
     """
     st.markdown("## **Introduccion**")
     st.markdown(texto_intro)
+
+    st.markdown(
+        """
+        <a href="https://github.com/Chicago-Fisicos/proyecto-fisica/tree/main/src/basket-doble/tablas" class="custom-link">
+           ✅ Este link tiene las tablas utilizadas en el proyecto
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.write("\n")
+
+    st.markdown(
+        """
+        <a href="https://drive.google.com/file/d/1Lk_OBzktsQlqfI8Cjd8zH4MgffPiLC9E/view?usp=drive_link" class="custom-link">
+            📑Nuestro informe.pdf
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.write("\n")
+
+    st.markdown(
+        """
+        <a href="https://docs.google.com/presentation/d/1u7n7ahZckj_DDZmPV43kTO9ds10_vaWc/edit?usp=drive_link&ouid=111004064811447974858&rtpof=true&sd=true" class="custom-link">
+           🎬 Y esta es nuestra presentacion 
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
