@@ -54,7 +54,7 @@ def app():
     st.markdown("## Video analizado")
 
     # Enlace embebido de Google Drive tiro del chipi
-    video_url = 'https://drive.google.com/file/d/1yRrGMfC26jI2qizgLljeAp7saDFM4Atu/preview'
+    video_url = 'https://drive.google.com/file/d/1hTnpxDve7oa7q2YXrx143-beURJl0u_Z/preview'
 
     # Insertar el video usando HTML
     st.markdown(f"""
