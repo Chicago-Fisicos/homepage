@@ -1,5 +1,5 @@
 import streamlit as st
-
+import streamlit.components.v1 as components
 # ---->
 # Links utilizados:
 #                   https://drive.google.com/uc?export=download&id=1RWtqI_ZqExIyvrCIzwQQmMt0qDv67mHY
@@ -71,3 +71,10 @@ def app():
         """,
         unsafe_allow_html=True,
     )
+
+    st.write("\n\n")
+    st.write("\n\n")
+
+    components.iframe(
+        "https://docs.google.com/presentation/d/e/2PACX-1vRI6PJMC0KnwygrjhoSusvv7sZmyfdZCHRS9JHUwln4XMK-5ePWmV8gY4dd24gM9Q/embed?start=false&loop=false&delayms=3000",
+        height=600, width=800)
