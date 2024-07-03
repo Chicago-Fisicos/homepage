@@ -66,8 +66,8 @@ def app():
     En cuanto al audio, en formato **.wav**, primero lo pasamos por un ecualizador para eliminar 
     el ruido de fondo, dejando solo los rebotes de la pelota.\n
     Utilizando Python y librerías externas: 
-    - “numpy” para transformar el audio en un arreglo de enteros. 
-    - scipy.signal.find_peaks para encontrar los “picos” de sonido en el arreglo
+    - **“numpy”** para transformar el audio en un arreglo de enteros. 
+    - **scipy.signal.find_peaks** para encontrar los “picos” de sonido en el arreglo
     cuánto más alto era un número, mayor era el pico, que interpretamos como
     el choque de la pelota con el suelo, guardándolo en un archivo formato .csv. \n
     Con los datos obtenidos, calculamos el coeficiente de restitución para cada rebote y

@@ -44,7 +44,7 @@ def app():
     st.markdown(
         """
         <a href="https://github.com/Chicago-Fisicos/proyecto-fisica/tree/main/src/basket-doble/tablas" class="custom-link">
-           ✅ Este link tiene las tablas utilizadas en el proyecto
+           💻 Este link contiene el código, las tablas utilizadas en el proyecto y datos de los experimentos 🤓
         </a>
         """,
         unsafe_allow_html=True,
