@@ -1,7 +1,6 @@
 import streamlit as st
 
 def app():
-    st.markdown("# **ANEXO**")
 
     # Enlace del PDF en Google Drive
     pdf_url = "https://drive.google.com/file/d/1Lk_OBzktsQlqfI8Cjd8zH4MgffPiLC9E/preview"
