@@ -112,3 +112,22 @@ def app():
     st.write("\n")
     image_2=get_image_from_drive(grafico_2)
     st.image(image_2,caption="Grafico 2")
+
+    st.write("\n")
+    st.markdown("## Calculos y resultados: \n")
+
+    texto_cyr="""
+        Dividimos los cálculos en dos partes: \n
+        El primer rebote desde que soltamos la pelota desde nuestra altura de referencia, y 
+        los rebotes sucesivos hasta que la pelota se detiene.\n
+        Nos basaremos en los siguientes conceptos:
+    """
+
+    st.markdown(texto_cyr)
+    # Descripciones
+    st.write("Ccr = coeficiente de restitución")
+    st.write("V = velocidad antes del impacto")
+    st.write("V' = velocidad después del impacto")
+
+    # Fórmula
+    st.latex(r"C_{cr} = -\frac{V'_{\text{pelota}} - V'_{\text{suelo}}}{V_{\text{pelota}} - V_{\text{suelo}}}")
