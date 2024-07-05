@@ -3,7 +3,9 @@ import streamlit as st
 def app():
 
     # Enlace del PDF en Google Drive
-    pdf_url = "https://drive.google.com/file/d/1Lk_OBzktsQlqfI8Cjd8zH4MgffPiLC9E/preview"
+    pdf_url = "https://drive.google.com/file/d/1FVxZyBev1lXaggrdcJmPjjjjxyI380sT/preview"
+
+    st.title('Informe final')
 
     # Ajustar el tamaño del iframe y agregar estilo CSS para mejor visualización
     st.markdown(

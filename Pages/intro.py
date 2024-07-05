@@ -54,7 +54,7 @@ def app():
 
     st.markdown(
         """
-        <a href="https://drive.google.com/file/d/1Lk_OBzktsQlqfI8Cjd8zH4MgffPiLC9E/view?usp=drive_link" class="custom-link">
+        <a href="https://drive.google.com/file/d/1FVxZyBev1lXaggrdcJmPjjjjxyI380sT/view?usp=drive_link" class="custom-link">
             📑Nuestro informe.pdf
         </a>
         """,

@@ -260,7 +260,7 @@ def app():
     #    st.dataframe(data_rebote_tablero_curvefit)
 
 
-    st.title("Tiro tenis de Fran")
+    st.title("Tiro con pelota de tenis")
 
     # Insertar el video usando HTML
     st.markdown(f"""
