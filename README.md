@@ -1,6 +1,6 @@
-# Streamlit Webpage
+# Física 1 project webpage
 This repository contains the code for a webpage created using Streamlit. 
-It showcases the work we did for our Physics 1 project, which can be found in [this repository](https://github.com/Chicago-Fisicos/proyecto-fisica/).
+It showcases the work we did for our Física 1 project, which can be found in [this repository](https://github.com/Chicago-Fisicos/proyecto-fisica/).
 
 The webpage is deployed and can be accessed using any of the following links:
 - https://chicago-fisicos.xyz
